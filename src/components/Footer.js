@@ -57,7 +57,7 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Ayan Khan</h1>
+          <h1 className="footer__col1__title">Durga Sai Teja Thota</h1>
           <PText>
           Driven by a commitment to excellence, I am dedicated to pushing the boundaries of what's possible in Full Stack Development, Salesforce, Power BI, and QA Engineering. With a focus on innovation and user-centric design, 
           I am poised to make a significant impact, delivering solutions that not only meet but exceed expectations across various domains.
