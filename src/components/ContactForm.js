@@ -37,5 +37,4 @@ const FormStyle = styled.form`
     border-radius: 8px;
     cursor: pointer;
   }
-`;
 }
