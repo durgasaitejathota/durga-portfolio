@@ -5,14 +5,15 @@ const ContactSectionStyle = styled.div`
   display: flex;
   justify-content: center;  /* Centers the content horizontally */
   align-items: center;      /* Centers the content vertically */
-  min-height: 100vh;        /* Takes up the full viewport height */
+  min-height: 100vh;        /* Full height of the viewport */
   text-align: center;       /* Centers the text inside the elements */
 
   .contact__info {
     background-color: var(--deep-dark);
     padding: 2rem;
     border-radius: 12px;
-    margin-bottom: 2rem;
+    max-width: 400px;
+    width: 100%;
   }
 
   .contact__info-item {
@@ -29,6 +30,10 @@ const ContactSectionStyle = styled.div`
   .contact__info-text {
     font-size: 1.8rem;
     color: var(--gray-1);
+  }
+
+  .vertical-line {
+    display: none;  /* Ensure the vertical line is completely hidden */
   }
 `;
 
