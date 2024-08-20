@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdEmail, MdLocalPhone } from 'react-icons/md';
+import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md';
+import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Import LinkedIn and GitHub icons
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
 
@@ -24,8 +25,25 @@ const ContactSectionStyle = styled.div`
     text-align: center; /* Center the text inside the contact info */
   }
 
-  .contactSection__wrapper::after {
-    display: none; /* Remove the vertical line */
+  .socialLinks {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .socialLink {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    color: var(--gray-1);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--white);
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -44,7 +62,27 @@ export default function ContactSection() {
           <div className="left">
             <ContactInfoItem icon={<MdLocalPhone />} text="+1 8167451318" />
             <ContactInfoItem icon={<MdEmail />} text="durgasaitejathota@gmail.com" />
-            <ContactInfoItem text="Overland Park, Kansas" />
+            <ContactInfoItem icon={<MdLocationOn />} text="Overland Park, Kansas" />
+            
+            {/* Social Links Section */}
+            <div className="socialLinks">
+              <a
+                className="socialLink"
+                href="https://www.linkedin.com/in/durga-sai-teja" // Replace with your LinkedIn URL
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin /> LinkedIn
+              </a>
+              <a
+                className="socialLink"
+                href="https://github.com/durgasaitejathota" // 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub /> GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>
