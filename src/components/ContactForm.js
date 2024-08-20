@@ -3,17 +3,17 @@ import styled from 'styled-components';
 
 const ContactSectionStyle = styled.div`
   display: flex;
-  justify-content: center;  /* Centers the content horizontally */
-  align-items: center;      /* Centers the content vertically */
-  min-height: 100vh;        /* Full height of the viewport */
-  text-align: center;       /* Centers the text inside the elements */
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+  min-height: 100vh;       /* Full height of the viewport */
+  text-align: center;      /* Center text within each item */
 
   .contact__info {
     background-color: var(--deep-dark);
     padding: 2rem;
     border-radius: 12px;
-    max-width: 400px;
-    width: 100%;
+    max-width: 400px;      /* Maximum width of the contact info box */
+    width: 100%;           /* Ensures responsiveness */
   }
 
   .contact__info-item {
@@ -33,7 +33,7 @@ const ContactSectionStyle = styled.div`
   }
 
   .vertical-line {
-    display: none;  /* Ensure the vertical line is completely hidden */
+    display: none; /* Hide any vertical lines */
   }
 `;
 
