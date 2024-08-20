@@ -39,25 +39,4 @@ const ContactSectionStyle = styled.div`
   }
 `;
 
-export default function Contact() {
-  return (
-    <ContactSectionStyle>
-      <div className="contact__wrapper">
-        <div className="contact__info">
-          <div className="contact__info-item">
-            <img src="phone-icon.png" alt="phone icon" />
-            <div className="contact__info-text">+1 8167451318</div>
-          </div>
-          <div className="contact__info-item">
-            <img src="email-icon.png" alt="email icon" />
-            <div className="contact__info-text">durgasaitejathota@gmail.com</div>
-          </div>
-          <div className="contact__info-item">
-            <img src="location-icon.png" alt="location icon" />
-            <div className="contact__info-text">Overland Park, Kansas</div>
-          </div>
-        </div>
-      </div>
-    </ContactSectionStyle>
-  );
-}
+
