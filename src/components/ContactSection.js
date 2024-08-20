@@ -9,7 +9,7 @@ const ContactSectionStyle = styled.div`
   padding: 10rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centering the content horizontally */
+  align-items: center;
 
   .contactSection__wrapper {
     display: flex;
@@ -22,7 +22,7 @@ const ContactSectionStyle = styled.div`
   .left {
     width: 100%;
     max-width: 500px;
-    text-align: center; /* Center the text inside the contact info */
+    text-align: center;
   }
 
   .socialLinks {
@@ -57,7 +57,7 @@ export default function ContactSection() {
   return (
     <ContactSectionStyle>
       <div className="container">
-        <SectionTitle heading="contact" subheading="get in touch" />
+        <SectionTitle heading="Contact" subheading="Get in touch" />
         <div className="contactSection__wrapper">
           <div className="left">
             <ContactInfoItem icon={<MdLocalPhone />} text="+1 8167451318" />
@@ -68,7 +68,7 @@ export default function ContactSection() {
             <div className="socialLinks">
               <a
                 className="socialLink"
-                href="https://www.linkedin.com/in/durga-sai-teja" // Replace with your LinkedIn URL
+                href="https://www.linkedin.com/in/durgasaitejathota"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -76,7 +76,7 @@ export default function ContactSection() {
               </a>
               <a
                 className="socialLink"
-                href="https://github.com/durgasaitejathota" // 
+                href="https://github.com/durgasaitejathota"
                 target="_blank"
                 rel="noopener noreferrer"
               >
