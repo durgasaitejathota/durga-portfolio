@@ -1,90 +1,63 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-const FormStyle = styled.form`
-  width: 100%;
-  .form-group {
-    width: 100%;
+const ContactSectionStyle = styled.div`
+  display: flex;
+  justify-content: center;  /* Centers the content horizontally */
+  align-items: center;      /* Centers the content vertically */
+  min-height: 100vh;        /* Takes up the full viewport height */
+  text-align: center;       /* Centers the text inside the elements */
+
+  .contact__wrapper {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__info {
+    background-color: var(--deep-dark);
+    padding: 2rem;
+    border-radius: 12px;
     margin-bottom: 2rem;
   }
-  label {
+
+  .contact__info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .contact__info-item img {
+    width: 3rem;
+    margin-right: 1.5rem;
+  }
+
+  .contact__info-text {
     font-size: 1.8rem;
-  }
-  input,
-  textarea {
-    width: 100%;
-    font-size: 2rem;
-    padding: 1.2rem;
     color: var(--gray-1);
-    background-color: var(--deep-dark);
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    margin-top: 1rem;
-  }
-  textarea {
-    min-height: 250px;
-    resize: vertical;
-  }
-  button[type='submit'] {
-    background-color: var(--gray-1);
-    color: var(--black);
-    font-size: 2rem;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 1rem 4rem;
-    border-radius: 8px;
-    cursor: pointer;
   }
 `;
 
-export default function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+export default function Contact() {
   return (
-    <>
-      <FormStyle>
-        <div className="form-group">
-          <label htmlFor="name">
-            Your Name
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
+    <ContactSectionStyle>
+      <div className="contact__wrapper">
+        <div className="contact__info">
+          <div className="contact__info-item">
+            <img src="phone-icon.png" alt="phone icon" />
+            <div className="contact__info-text">+1 8167451318</div>
+          </div>
+          <div className="contact__info-item">
+            <img src="email-icon.png" alt="email icon" />
+            <div className="contact__info-text">durgasaitejathota@gmail.com</div>
+          </div>
+          <div className="contact__info-item">
+            <img src="location-icon.png" alt="location icon" />
+            <div className="contact__info-text">Overland Park, Kansas</div>
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">
-            Your Email
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">
-            Your message
-            <textarea
-              type="text"
-              id="message"
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </label>
-        </div>
-        <button type="submit">Send</button>
-      </FormStyle>
-    </>
+      </div>
+    </ContactSectionStyle>
   );
 }
-
