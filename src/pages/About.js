@@ -83,25 +83,25 @@ export default function About() {
               <p className="about__subheading">
                 Hi, I am <span>Durga Sai Teja Thota</span>
               </p>
-              <h2 className="about__heading">A full stack developer</h2>
+              <h2 className="about__heading">A Java Full Stack Developer</h2>
               <div className="about__info">
                 <PText>
                <p>
-  I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices. I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization. I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
+ A skilled Java Full Stack Developer with 3.7 years of experience specializing in building and deploying scalable web applications and microservices. My expertise spans across Java, Spring Boot, and React for developing robust back-end systems and responsive front-end applications. 
+    I have a strong background in microservices architecture, event-driven systems with Kafka, and RESTful APIs for seamless integration.
 </p>
 
                   <br /> <br />
-                  With a solid foundation in Full Stack Development, I am ready to 
-                  contribute effectively to projects, delivering high-quality results and driving success.
+                  My technical skills extend to containerization using Docker, orchestration with Kubernetes, and deploying applications on cloud platforms like AWS (EC2, S3, ECS, and Lambda). I am proficient in optimizing database performance with PostgreSQL and MongoDB and have automated CI/CD pipelines using Jenkins, 
+    ensuring rapid and reliable deployment. Additionally, I have experience with monitoring and logging using AWS CloudWatch, Log4j, and the ELK stack.
                   <br />
                   <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
+                  I have contributed to various projects, including enhancing system scalability, implementing chatbot solutions for dynamic management, and optimizing data synchronization.
+    I am also adept at collaborating with cross-functional teams within Agile environments, continuously delivering high-quality software solutions.
                   place.
                 </PText>
               </div>
-              <Button btnText="Download CV" btnLink="#" />
+            
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
