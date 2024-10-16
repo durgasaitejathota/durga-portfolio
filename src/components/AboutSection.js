@@ -80,8 +80,7 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-          I am a skilled QA Engineer with hands-on experience in Salesforce SFDC CRM, specializing in
-          streamlining partner enrollment processes. Additionally, I contributed to some development aspects of the project, enhancing my technical skills. 
+          I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices. I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization. I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects. 
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />
