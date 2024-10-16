@@ -161,10 +161,7 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-            I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices.
-            I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization.
-    I have a strong background in microservices,
-                CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
+     
             </PText>
           
           </div>
