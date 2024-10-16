@@ -147,6 +147,17 @@ export default function NavMenu() {
         </li>
         <li>
           <NavLink
+            to="/experience"  // New link for the Experience page
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Experience
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/contact"
             onClick={() => setShowNav(!showNav)}
             role="button"
