@@ -86,10 +86,10 @@ export default function About() {
               <h2 className="about__heading">A full stack developer</h2>
               <div className="about__info">
                 <PText>
-                I specialize in Full Stack Development, with a focus on Java, Salesforce,
-                 and Power BI. My approach is centered on practicality and efficiency,
-                  utilizing various development methodologies to deliver tailored solutions. I am committed to excellence,
-                   ensuring that every solution I create is meticulously crafted to meet project requirements. Continuously striving for improvement and innovation, I aim to push the boundaries of software development.
+               <p>
+  I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices. I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization. I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
+</p>
+
                   <br /> <br />
                   With a solid foundation in Full Stack Development, I am ready to 
                   contribute effectively to projects, delivering high-quality results and driving success.
