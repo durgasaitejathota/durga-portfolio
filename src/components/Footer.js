@@ -40,6 +40,20 @@ const FooterStyle = styled.div`
     }
   }
 `;
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+
+function Footer() {
+  const history = useHistory();
+
+  return (
+    <div>
+      <button onClick={() => history.push('/')}>Back to Home</button>
+    </div>
+  );
+}
+
+export default Footer;
 
 export default function Footer() {
   return (
@@ -51,6 +65,7 @@ export default function Footer() {
             Driven by a commitment to excellence, I am dedicated to pushing the boundaries of what's possible in Full Stack Development, Salesforce, Power BI, and QA Engineering. With a focus on innovation and user-centric design, 
             I am poised to make a significant impact, delivering solutions that not only meet but exceed expectations across various domains.
           </PText>
+    <button onClick={() => history.push('/')}>Back to Home</button>
         </div>
       </div>
       <div className="copyright">
