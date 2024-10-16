@@ -1,22 +1,16 @@
 import React from 'react';
-import AboutSection from '../components/AboutSection';
-import ServicesSection from '../components/ServicesSection';
-import ProjectsSection from '../components/ProjectsSection';
-import TestimonialsSection from '../components/TestimonialsSection';
 import ContactBanner from '../components/ContactBanner';
 import HeroSection from '../components/HeroSection';
-import ServicesSection from '../components/ExperienceSection';
+import ExperienceSection from '../components/ExperienceSection'; // Ensure this is correctly imported
+import ProjectsSection from '../components/ProjectsSection';
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
-      <AboutSection />
-      <ServicesSection />
+      <ExperienceSection /> {/* Include the Experience Section */}
       <ProjectsSection />
-      <TestimonialsSection />
       <ContactBanner />
-      <ExperienceSection />
     </div>
   );
 }
