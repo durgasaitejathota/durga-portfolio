@@ -123,21 +123,40 @@ export default function About() {
               <h1 className="about__info__heading">My Skills</h1>
 
               <AboutInfoItem
-                title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
-              />
-              <AboutInfoItem
-                title="BackEnd"
-                items={['Node', 'Java']}
-              />
+          title="Front-End Technologies"
+          items={['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Bootstrap']}
+        />
+        <AboutInfoItem
+          title="Back-End Technologies"
+          items={['Java', 'Spring Boot', 'Node.js', 'Express']}
+        />
+        <AboutInfoItem
+          title="Database Technologies"
+          items={['PostgreSQL', 'MongoDB']}
+        />
+        <AboutInfoItem
+          title="Cloud & DevOps"
+          items={['AWS', 'Docker', 'Kubernetes']}
+        />
+        <AboutInfoItem
+          title="Testing Frameworks"
+          items={['JUnit', 'Mockito', 'Selenium']}
+        />
+            
               
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">Experience</h1>
 
               <AboutInfoItem
-                title="2021-2022"
-                items={['QA Engineer at Tata Consultancy services']}
+                title="Jul 2023 - Present"
+                items={['Java Full Stack Developer at Sapot Systems Inc']}
+                  <AboutInfoItem
+                title="May 2021 - Jul 2022"
+                items={['Software Developer at Tata Consultancy Services']}
+                  <AboutInfoItem
+                title="Jul 2019 - May 2021"
+                items={['Java Full Stack Developer at Zoron Solutions LLC']}
               />
             </div>
           </div>
