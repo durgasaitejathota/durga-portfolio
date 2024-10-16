@@ -1,34 +1,31 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Footer from './components/Footer';
-import NavMenu from './components/NavMenu';
-import ScrollToTop from './components/ScrollToTop';
-import About from './pages/About';
-import Contact from './pages/Contact';
 import Home from './pages/Home';
-import Projects from './pages/Projects'; 
-import Experience from './pages/Experience';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Experience from './pages/Experience'; // Import the Experience page
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
-export default function App() {
+function App() {
   return (
     <>
       <Router>
-        <NavMenu />
-        <ScrollToTop />
         <Switch>
-          <Route path="/Experience">
-            <Experience />
+          <Route path="/" exact>
+            <Home />
+          </Route>
           <Route path="/about">
             <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
           </Route>
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/">
-            <Home />
+          <Route path="/experience"> {/* Ensure this is added correctly */}
+            <Experience />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
         <Footer />
@@ -36,3 +33,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;
