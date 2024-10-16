@@ -161,12 +161,12 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-            I am a Full Stack Developer with a passion for creating unique and impactful solutions. 
-            With expertise in Salesforce, Power BI, and a solid background in QA Engineering, 
-            I strive to deliver high-quality results that exceed expectations. My goal is to leverage my diverse skill set to provide innovative and 
-            efficient solutions that drive success and enhance user experiences.
+            I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices.
+            I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization.
+    I have a strong background in microservices,
+                CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
             </PText>
-            <Button btnText="see my works" btnLink="/projects" />
+          
           </div>
           <div className="hero__scrollDown">
             <p>Scroll</p>
