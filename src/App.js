@@ -6,7 +6,8 @@ import ScrollToTop from './components/ScrollToTop';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects'; 
+import Experience from './pages/Experience';
 
 export default function App() {
   return (
@@ -15,6 +16,8 @@ export default function App() {
         <NavMenu />
         <ScrollToTop />
         <Switch>
+          <Route path="/Experience">
+            <Experience />
           <Route path="/about">
             <About />
           </Route>
