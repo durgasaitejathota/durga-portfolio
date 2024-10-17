@@ -26,10 +26,8 @@ const HomeStyle = styled.div`
 
   .academicProjects {
     margin-top: 4rem;
-    h2 {
-      font-size: 2.5rem; /* Same font size as other section headings */
-      margin-bottom: 1rem; /* Space below the heading */
-    }
+    font-size: 2rem; /* Adjust size for the section title */
+    text-align: left; /* Align text to the left */
   }
 
   @media only screen and (max-width: 768px) {
@@ -39,6 +37,9 @@ const HomeStyle = styled.div`
     }
     .about {
       font-size: 1.8rem;
+    }
+    .academicProjects {
+      font-size: 1.8rem; /* Adjust size for mobile view */
     }
   }
 `;
@@ -57,14 +58,15 @@ export default function Home() {
             <Button btnText="More About Me" btnLink="/about" />
           </div>
         </div>
-
+        
         <div className="academicProjects">
           <h2>My Academic Projects</h2>
           <ProjectsSection />
+          <Button btnText="View All Projects" btnLink="/projects" />
         </div>
 
         <div className="projectsSection">
-          <h2 style={{ fontSize: '2.5rem' }}>Checkout My Work Experience</h2> {/* You can keep or adjust this section */}
+          <h2 style={{ fontSize: '2.5rem' }}>Checkout My Work Experience</h2> {/* Increased size */}
           <Button btnText="Work Experience" btnLink="/projects" />
         </div>
         
@@ -73,4 +75,3 @@ export default function Home() {
     </HomeStyle>
   );
 }
-
