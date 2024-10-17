@@ -7,7 +7,7 @@ const FooterStyle = styled.div`
   background-color: var(--deep-dark);
   padding-top: 10rem;
   text-align: center; /* Center align the content */
-  
+
   .container {
     display: flex;
     flex-direction: column;
@@ -42,21 +42,9 @@ const FooterStyle = styled.div`
   }
 `;
 
-
-
 function Footer() {
   const history = useHistory();
 
-  return (
-    <div>
-      <button onClick={() => history.push('/')}>Back to Home</button>
-    </div>
-  );
-}
-
-export default Footer;
-
-export default function Footer() {
   return (
     <FooterStyle>
       <div className="container">
@@ -64,9 +52,9 @@ export default function Footer() {
           <h1 className="footer__col1__title">Durga Sai Teja Thota</h1>
           <PText>
             Driven by a commitment to excellence, I am dedicated to pushing the boundaries of what's possible in Full Stack Development. With expertise in Java, Spring Boot, React, AWS, and modern DevOps practices, I focus on building robust, scalable web applications that provide exceptional user experiences. 
-    My passion for innovation and user-centric design empowers me to deliver solutions that not only meet but exceed expectations, making a significant impact across various domains.
+            My passion for innovation and user-centric design empowers me to deliver solutions that not only meet but exceed expectations, making a significant impact across various domains.
           </PText>
-    <button onClick={() => history.push('/')}>Back to Home</button>
+          <button onClick={() => history.push('/')}>Back to Home</button> {/* Back to Home button */}
         </div>
       </div>
       <div className="copyright">
@@ -79,3 +67,5 @@ export default function Footer() {
     </FooterStyle>
   );
 }
+
+export default Footer;
