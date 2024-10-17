@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../components/SectionTitle';
-import ProjectsInfo from '../assets/data/projects';
-import ProjectItem from '../components/ProjectItem'; 
-
+import ProjectItem from '../components/ProjectItem';
+import projects from '../assets/data/projects'; // Ensure this path is correct
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
@@ -17,19 +16,17 @@ const ProjectStyle = styled.div`
 `;
 
 export default function Projects() {
-  const [projectsData, setProjectsData] = useState(ProjectsInfo);
-
   return (
     <ProjectStyle>
       <div className="container">
-        <SectionTitle heading="Work Experience" subheading="My professional journey" />
+        <SectionTitle heading="Projects" subheading="My Academic Projects" />
         <div className="projects__allItems">
-          {projectsData.map((item) => (
+          {projects.map((item) => (
             <ProjectItem
               key={item.id}
               title={item.name}
-              desc={item.desc}
-              img={item.img}
+              desc={item.description}
+              img={item.image}
             />
           ))}
         </div>
