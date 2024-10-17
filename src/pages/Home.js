@@ -2,36 +2,36 @@ import React from 'react';
 import styled from 'styled-components';
 import HeroSection from '../components/HeroSection';
 import Button from '../components/Button';
-import ExperienceSection from '../components/ExperienceSection';
+import ExperienceSection from '../components/ExperienceSection'; // Keep this import if you need the component
 import ProjectsSection from '../components/ProjectsSection';
 import ContactBanner from '../components/ContactBanner';
 
 const HomeStyle = styled.div`
-  padding: 0 5rem;
+  padding: 0 5rem; /* Padding for the home page */
   text-align: center;
 
   .introduction {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+    font-size: 3rem; /* Font size for introduction */
+    margin-bottom: 2rem; /* Spacing below introduction */
+    line-height: 1.5; /* Line height for readability */
   }
 
   .about {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 2rem; /* Font size for about section */
+    margin-top: 2rem; /* Spacing above about section */
   }
 
   .moreAboutMe {
-    margin-top: 2rem; /* Adds some spacing before the button */
+    margin-top: 2rem; /* Spacing for button */
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 0 2rem;
+    padding: 0 2rem; /* Less padding on smaller screens */
     .introduction {
-      font-size: 2.5rem;
+      font-size: 2.5rem; /* Font size adjustment for smaller screens */
     }
     .about {
-      font-size: 1.8rem;
+      font-size: 1.8rem; /* Font size adjustment for smaller screens */
     }
   }
 `;
@@ -50,8 +50,9 @@ export default function Home() {
             <Button btnText="More About Me" btnLink="/about" />
           </div>
         </div>
-        <ExperienceSection />
-        <ProjectsSection />
+        {/* Add a new section for work experience */}
+        <h2>Some of My Recent Works to Checkout My Work Experiences</h2>
+        <ProjectsSection /> {/* This will display the Projects with updated button */}
         <ContactBanner />
       </div>
     </HomeStyle>
