@@ -51,9 +51,9 @@ export default function Home() {
           </div>
         </div>
         <div className="projectsSection">
-          <h2>Checkout My Work Experience</h2>
+          <h2>Checkout My Academic Projects</h2>
           <ProjectsSection />
-          <Button btnText="Work Experience" btnLink="/projects" />
+          <Button btnText="Academic Projects" btnLink="/projects" />
         </div>
         <ContactBanner />
       </div>
