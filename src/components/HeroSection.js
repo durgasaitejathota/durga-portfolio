@@ -22,6 +22,7 @@ const HeroStyles = styled.div`
     font-size: 2rem;
     margin-bottom: -4rem;
     position: relative;
+    top: -6rem; /* Adjust this value to reduce the gap */
     span {
       display: inline-block;
       width: 100%;
@@ -102,6 +103,7 @@ const HeroStyles = styled.div`
     .hero__heading {
       font-size: 1.4rem;
       margin-bottom: -3rem;
+      top: -3rem; /* Adjust this value for smaller screens */
       .hero__name {
         font-size: 4.5rem;
       }
@@ -173,4 +175,3 @@ export default function HeroSection() {
     </HeroStyles>
   );
 }
-
