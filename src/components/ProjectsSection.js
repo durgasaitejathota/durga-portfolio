@@ -1,102 +1,78 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
-import ProjectItem from './ProjectItem';
-import SectionTitle from './SectionTitle';
-import 'swiper/swiper-bundle.min.css';
-import projects from '../assets/data/projects';
 
-// install Swiper modules
-SwiperCore.use([Navigation]);
+const ProjectStyle = styled.div`
+  background-color: var(--deep-dark);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  margin: 3rem 0;
 
-const ProjectSectionStyle = styled.div`
-  padding: 10rem 0;
-  .projects__allItems {
-    display: flex;
-    gap: 3rem;
-    margin-top: 5rem;
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+    text-transform: uppercase;
   }
-  .swiper-container {
-    padding-top: 8rem;
-    max-width: 100%;
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background: var(--deep-dark);
-    z-index: 10;
-    right: 60px;
-    left: auto;
-    top: 0;
-    transform: translateY(50%);
+
+  h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
     color: var(--gray-1);
-    border-radius: 8px;
   }
-  .swiper-button-next {
-    right: 0;
+
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--light-gray);
   }
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 2rem;
+
+  .environment {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: var(--light-gray);
   }
-  @media only screen and (max-width: 768px) {
-    .projects__allItems {
-      flex-direction: column;
-      max-width: 400px;
-      margin: 0 auto;
-      margin-top: 7rem;
-      gap: 5rem;
-      .projectItem__img {
-        width: 100%;
-      }
-    }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    color: var(--light-gray);
   }
 `;
 
 export default function ProjectsSection() {
-  // console.log(projects);
   return (
-    <ProjectSectionStyle>
-      <div className="container">
-        <SectionTitle subheading="some of my recent works" heading="Projects" />
-        <div className="projects__allItems">
-          <Swiper
-            spaceBetween={30}
-            slidesPerView={1}
-            navigation
-            breakpoints={{
-              // when window width is >= 640px
-              640: {
-                slidesPerView: 1,
-              },
-              // when window width is >= 768px
-              768: {
-                slidesPerView: 2,
-              },
-              // when window width is >= 1200px
-              1200: {
-                slidesPerView: 3,
-              },
-            }}
-          >
-            {projects.map((project, index) => {
-              if (index >= 5) return;
-              return (
-                <SwiperSlide key={project.id}>
-                  <ProjectItem
-                    title={project.name}
-                    img={project.img}
-                    desc={project.desc}
-                  />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
+    <ProjectStyle>
+      <h2>My Work Experience</h2>
+      <div>
+        <h3>Sapot Systems Inc.</h3>
+        <p>Java Full Stack Developer (July 2023 – Present)</p>
+        <ul>
+          <li>Led the development of microservices for Load Configuration and Shift Scheduling, enhancing system scalability by 30%.</li>
+          <li>Integrated a chatbot for dynamic shift management, increasing scheduling accuracy by 25%.</li>
+          <li>Automated testing with JUnit and Mockito, achieving 95% code coverage.</li>
+        </ul>
+        <p className="environment"><strong>Environment:</strong> Java 8, Spring Boot, AWS (EC2, S3), Docker, Kubernetes.</p>
       </div>
-    </ProjectSectionStyle>
-  );
-}
+      <div>
+        <h3>Tata Consultancy Services</h3>
+        <p>Software Developer (May 2021 – July 2022)</p>
+        <ul>
+          <li>Developed a content delivery optimization platform, boosting media retrieval speed by 40%.</li>
+          <li>Enhanced API security using Spring Security and OAuth2, ensuring safe data exchanges.</li>
+          <li>Automated cloud deployments on AWS ECS, achieving 99.9% system uptime.</li>
+        </ul>
+        <p className="environment"><strong>Environment:</strong> Java, Spring Boot, AWS (ECS), PostgreSQL.</p>
+      </div>
+      <div>
+        <h3>Zoron IT Solutions LLP</h3>
+        <p>Java Full Stack Developer (July 2019 – May 2021)</p>
+        <ul>
+          <li>Led the development of an Inventory and Order Management System, automating workflows and reducing manual intervention by 40%.</li>
+          <li>Optimized data storage using MongoDB, improving query response time by 25%.</li>
+          <li>Implemented JWT-based 
