@@ -38,12 +38,14 @@ export default function Home() {
           I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
         </p>
         <button style={buttonStyle} onClick={handleMoreAboutMe}>More About Me</button> {/* Styled button */}
+  <Button btnText="More About Me" btnLink="/about" />
       </div>
       <div>
         <ExperienceSection /> {/* Include the Experience Section */}
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
           <h2 style={{ fontSize: '2rem' }}>Some of My Recent Works</h2> {/* Changed title */}
-          <button style={buttonStyle} onClick={handleProjectsRedirect}>Projects</button> {/* Redirects to Projects page */}
+          
+  <Button btnText="PROJECTS" btnLink="/Projects" />
         </div>
       </div>
       <ContactBanner />
