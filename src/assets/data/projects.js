@@ -11,6 +11,13 @@ import ACGImg from '../images/ACG.jpg';
 // If you need uuidv4, import it just once
 
 // Update your projects data here
+// src/assets/data/projects.js
+import { v4 as uuidv4 } from 'uuid';
+import PMSImg from '../images/SapotSystemsProject.jpg'; // Keep this if still needed
+import RMSImg from '../images/TCSProject.jpg';   // Keep this if still needed
+import ACGImg from '../images/ZoronITProject.jpg';    // Keep this if still needed
+
+// Update your projects data here
 export const projects = [
   {
     id: uuidv4(),
