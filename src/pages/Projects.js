@@ -19,7 +19,7 @@ export default function Projects() {
   return (
     <ProjectStyle>
       <div className="container">
-        <SectionTitle heading="Projects" subheading="My Academic Projects" />
+        <SectionTitle heading="Projects" subheading="My Professional Work Experience" />
         <div className="projects__allItems">
           {projects.map((item) => (
             <ProjectItem
