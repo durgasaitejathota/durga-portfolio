@@ -1,30 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import HeroSection from '../components/HeroSection';
 import Button from '../components/Button';
-import HeroSection from '../components/HeroSection'; 
-import ExperienceSection from '../components/ExperienceSection'; 
-import ContactBanner from '../components/ContactBanner'; 
+import ExperienceSection from '../components/ExperienceSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ContactBanner from '../components/ContactBanner';
 
 const HomeStyle = styled.div`
-  padding: 0 5rem;  /* Explicit padding for left and right */
+  padding: 0 5rem;
   text-align: center;
-  margin: 0;         /* Ensures no margin */
 
   .introduction {
     font-size: 3rem;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
     line-height: 1.5;
   }
 
   .about {
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
-  .recentWorks {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-top: 4rem;
+  .moreAboutMe {
+    margin-top: 2rem; /* Adds some spacing before the button */
   }
 
   @media only screen and (max-width: 768px) {
@@ -35,29 +33,25 @@ const HomeStyle = styled.div`
     .about {
       font-size: 1.8rem;
     }
-    .recentWorks {
-      font-size: 3rem;
-    }
   }
 `;
 
 export default function Home() {
   return (
     <HomeStyle>
-      <HeroSection />
       <div className="container">
-        <h1 className="introduction">Let Me Introduce Myself</h1>
-        <p className="about">
-          I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices.
-          I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization.
-          I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
-        </p>
-
+        <HeroSection />
+        <div className="introduction">
+          <h1>Let Me Introduce Myself</h1>
+          <p className="about">
+            I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices. I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization. I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
+          </p>
+          <div className="moreAboutMe">
+            <Button btnText="More About Me" btnLink="/about" />
+          </div>
+        </div>
         <ExperienceSection />
-
-        <h2 className="recentWorks">Some of My Recent Works</h2>
-        <Button btnText="Projects" btnLink="/projects" />
-
+        <ProjectsSection />
         <ContactBanner />
       </div>
     </HomeStyle>
