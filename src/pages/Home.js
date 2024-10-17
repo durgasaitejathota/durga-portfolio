@@ -1,43 +1,62 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
-import ProjectItem from './ProjectItem';
-import SectionTitle from './SectionTitle';
-import 'swiper/swiper-bundle.min.css';
-import projects from '../assets/data/projects'; // Ensure this contains academic projects
+import HeroSection from '../components/HeroSection';
+import Button from '../components/Button';
+import ProjectsSection from '../components/ProjectsSection'; 
+import ProjectItem from '../components/ProjectItem'; // Corrected import path
+import ContactBanner from '../components/ContactBanner';
 
-// install Swiper modules
-SwiperCore.use([Navigation]);
+const HomeStyle = styled.div`
+  padding: 0 5rem;
+  text-align: center;
 
-const ProjectSectionStyle = styled.div`
-  padding: 10rem 0;
-  .projects__allItems {
-    display: flex;
-    gap: 3rem;
-    margin-top: 5rem;
+  .introduction {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  .about {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .projectsSection {
+    margin-top: 4rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 2rem;
+    .introduction {
+      font-size: 2.5rem;
+    }
+    .about {
+      font-size: 1.8rem;
+    }
   }
 `;
 
-export default function ProjectsSection() {
+export default function Home() {
   return (
-    <ProjectSectionStyle>
+    <HomeStyle>
       <div className="container">
-        <SectionTitle subheading="Checkout My Work Experience" heading="My Academic Projects" />
-        <div className="projects__allItems">
-          <Swiper spaceBetween={30} slidesPerView={1} navigation>
-            {projects.map((project) => (
-              <SwiperSlide key={project.id}>
-                <ProjectItem
-                  title={project.name}
-                  img={project.image}
-                  desc={project.description}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <HeroSection />
+        <div className="introduction">
+          <h1>Let Me Introduce Myself</h1>
+          <p className="about">
+            I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices. I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization. I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
+          </p>
+          <div className="moreAboutMe">
+            <Button btnText="More About Me" btnLink="/about" />
+          </div>
         </div>
+        <div className="projectsSection">
+          <h2>Checkout My Work Experience</h2>
+          <ProjectsSection />
+          <Button btnText="Work Experience" btnLink="/projects" />
+        </div>
+        <ContactBanner />
       </div>
-    </ProjectSectionStyle>
+    </HomeStyle>
   );
 }
