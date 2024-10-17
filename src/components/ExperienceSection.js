@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ExperienceStyle = styled.div`
-  padding: 2rem;
+  padding: 2rem; /* Padding for the experience section */
   text-align: center;
 
   h2 {
-    font-size: 3rem; /* Font size for My Work Experience heading */
+    font-size: 3rem; /* Font size for the My Work Experience heading */
     margin: 2rem 0; /* Margin for spacing above and below */
   }
 
