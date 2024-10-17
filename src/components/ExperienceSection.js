@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ExperienceStyle = styled.div`
-  padding: 2rem; /* Padding for the experience section */
+  padding: 2rem;
   text-align: center;
 
   h2 {
