@@ -54,7 +54,7 @@ function Footer() {
             Driven by a commitment to excellence, I am dedicated to pushing the boundaries of what's possible in Full Stack Development. With expertise in Java, Spring Boot, React, AWS, and modern DevOps practices, I focus on building robust, scalable web applications that provide exceptional user experiences. 
             My passion for innovation and user-centric design empowers me to deliver solutions that not only meet but exceed expectations, making a significant impact across various domains.
           </PText>
-          <button onClick={() => history.push('/')}>Back to Home</button> {/* Back to Home button */}
+          <Button btnText="Back To Home" btnLink="/home" />
         </div>
       </div>
       <div className="copyright">
