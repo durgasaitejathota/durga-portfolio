@@ -2,44 +2,53 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ExperienceStyle = styled.div`
-  padding: 2rem; /* Padding for the experience section */
-  text-align: center;
+  background-color: var(--deep-dark); /* Adds a background color */
+  padding: 3rem; /* Adds padding for spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for a 3D effect */
+  text-align: left; /* Align text to the left for a different look */
+  margin: 3rem 0; /* Margin for spacing from other sections */
 
   h2 {
-    font-size: 3rem; /* Font size for the My Work Experience heading */
-    margin: 2rem 0; /* Margin for spacing above and below */
+    font-size: 3.5rem; /* Increase font size for the heading */
+    margin-bottom: 2rem; /* Margin below the heading */
+    color: var(--white); /* Make heading color different */
+    text-transform: uppercase; /* Optional: make the text uppercase */
   }
 
   h3 {
-    font-size: 3rem; /* Updated to match the introduction font size */
+    font-size: 2.2rem; /* Font size for experience titles */
     margin-bottom: 1rem;
+    color: var(--gray-1); /* Lighter color for titles */
   }
 
   p {
-    font-size: 2rem; /* Updated font size to match the 'about' paragraph */
+    font-size: 1.8rem; /* Font size for experience descriptions */
     margin-bottom: 1rem;
+    color: var(--light-gray); /* Lighter color for descriptions */
   }
 
   .environment {
-    font-size: 2rem; /* Match environment details with paragraph font size */
-    font-style: italic; /* Optional: to differentiate environment text */
+    font-size: 1.6rem; /* Font size for environment details */
+    font-style: italic; /* Italics to differentiate environment text */
+    color: var(--light-gray);
   }
 
   ul {
-    list-style-type: none; /* Remove bullet points */
-    padding-left: 0; /* Remove left padding */
+    list-style-type: disc; /* Use bullet points for list items */
+    margin-left: 2rem; /* Indent the list */
   }
 
   li {
-    font-size: 2rem; /* Matching the new size */
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Spacing between list items */
+    color: var(--light-gray); /* Lighter color for list items */
   }
 `;
 
 export default function ExperienceSection() {
   return (
     <ExperienceStyle>
-      <h2>My Work Experience</h2> {/* Updated heading */}
+      <h2>My Work Experience</h2>
       <div>
         <h3>Sapot Systems Inc.</h3>
         <p>Java Full Stack Developer (July 2023 – Present)</p>
