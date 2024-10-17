@@ -1,21 +1,6 @@
-import { v4 as uuidv4 } from 'uuid';
-//import ProjectImg from '../images/projectImg.png';
-import PMSImg from '../images/PMS.webp';
-import RMSImg from '../images/RMS.jpg';
-import ACGImg from '../images/ACG.jpg';
-//import CavinImg from '../images/cavinimg.jpg';
-
-// Remove any duplicate import statements for uuidv4 if present
-// import { v4 as uuidv4 } from 'uuid';
-
-// If you need uuidv4, import it just once
-
-// Update your projects data here
 // src/assets/data/projects.js
-import { v4 as uuidv4 } from 'uuid';
-import PMSImg from '../images/SapotSystemsProject.jpg'; // Keep this if still needed
-import RMSImg from '../images/TCSProject.jpg';   // Keep this if still needed
-import ACGImg from '../images/ZoronITProject.jpg';    // Keep this if still needed
+import { v4 as uuidv4 } from 'uuid'; // Only one instance of this import
+// Removed unused image imports
 
 // Update your projects data here
 export const projects = [
@@ -43,6 +28,3 @@ export const projects = [
 ];
 
 export default projects;
-
-
-
