@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import HeroSection from '../components/HeroSection';
 import Button from '../components/Button';
 import ProjectsSection from '../components/ProjectsSection'; 
-import ProjectItem from '../components/ProjectItem'; // Corrected import path
 import ContactBanner from '../components/ContactBanner';
 
 const HomeStyle = styled.div`
@@ -25,6 +24,12 @@ const HomeStyle = styled.div`
     margin-top: 4rem;
   }
 
+  .academicProjects {
+    margin-top: 4rem;
+    font-size: 2rem; /* Adjust size for the section title */
+    text-align: left; /* Align text to the left */
+  }
+
   @media only screen and (max-width: 768px) {
     padding: 0 2rem;
     .introduction {
@@ -32,6 +37,9 @@ const HomeStyle = styled.div`
     }
     .about {
       font-size: 1.8rem;
+    }
+    .academicProjects {
+      font-size: 1.8rem; /* Adjust size for mobile view */
     }
   }
 `;
@@ -50,12 +58,18 @@ export default function Home() {
             <Button btnText="More About Me" btnLink="/about" />
           </div>
         </div>
-        <div className="experienceSection">
+        
+        <div className="academicProjects">
+          <h2>My Academic Projects</h2>
+          <ProjectsSection />
+          <Button btnText="View All Projects" btnLink="/projects" />
+        </div>
 
-          <experienceSection />
-    <h2>Checkout My Work Experience</h2>
+        <div className="projectsSection">
+          <h2 style={{ fontSize: '2.5rem' }}>Checkout My Work Experience</h2> {/* Increased size */}
           <Button btnText="Work Experience" btnLink="/projects" />
         </div>
+        
         <ContactBanner />
       </div>
     </HomeStyle>
