@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ExperienceStyle = styled.div`
-  background-color: var(--deep-dark); /* Adds a background color */
+  background-color: var(--deep-dark); /* Adds the background color used in the contact banner */
   padding: 3rem; /* Adds padding for spacing */
   border-radius: 12px; /* Rounded corners */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for a 3D effect */
@@ -48,7 +48,6 @@ const ExperienceStyle = styled.div`
 export default function ExperienceSection() {
   return (
     <ExperienceStyle>
-      
       <div>
         <h3>Automatic Generation of Image Captions Using Deep Learning</h3>
         <p>
