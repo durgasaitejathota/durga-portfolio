@@ -2,8 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ExperienceStyle = styled.div`
-  padding: 2rem;
+  padding: 2rem; /* Padding for the experience section */
   text-align: center;
+
+  h2 {
+    font-size: 3rem; /* Font size for My Work Experience heading */
+    margin: 2rem 0; /* Margin for spacing above and below */
+  }
 
   h3 {
     font-size: 2rem; /* Font size for experience titles */
@@ -11,12 +16,12 @@ const ExperienceStyle = styled.div`
   }
 
   p {
-    font-size: 1.6rem; /* Font size for experience descriptions */
+    font-size: 1.8rem; /* Increased font size for experience descriptions */
     margin-bottom: 1rem;
   }
 
   .environment {
-    font-size: 1.4rem; /* Font size for environment details */
+    font-size: 1.6rem; /* Font size for environment details */
     font-style: italic; /* Optional: to differentiate environment text */
   }
 `;
@@ -24,7 +29,7 @@ const ExperienceStyle = styled.div`
 export default function ExperienceSection() {
   return (
     <ExperienceStyle>
-      <h2>Experience</h2>
+      <h2>My Work Experience</h2> {/* Updated heading */}
       <div>
         <h3>Sapot Systems Inc.</h3>
         <p>Java Full Stack Developer (July 2023 – Present)</p>
