@@ -62,8 +62,8 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Durga Sai Teja Thota</h1>
           <PText>
-            Driven by a commitment to excellence, I am dedicated to pushing the boundaries of what's possible in Full Stack Development, Salesforce, Power BI, and QA Engineering. With a focus on innovation and user-centric design, 
-            I am poised to make a significant impact, delivering solutions that not only meet but exceed expectations across various domains.
+            Driven by a commitment to excellence, I am dedicated to pushing the boundaries of what's possible in Full Stack Development. With expertise in Java, Spring Boot, React, AWS, and modern DevOps practices, I focus on building robust, scalable web applications that provide exceptional user experiences. 
+    My passion for innovation and user-centric design empowers me to deliver solutions that not only meet but exceed expectations, making a significant impact across various domains.
           </PText>
     <button onClick={() => history.push('/')}>Back to Home</button>
         </div>
