@@ -1,6 +1,8 @@
 // ProjectsSection.js
 import React from 'react';
 import styled from 'styled-components';
+import ProjectItem from '../components/ProjectItem'; // Correct path to ProjectItem
+
 
 const ProjectSectionStyle = styled.div`
   // ... existing styles
