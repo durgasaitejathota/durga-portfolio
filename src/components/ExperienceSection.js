@@ -11,18 +11,28 @@ const ExperienceStyle = styled.div`
   }
 
   h3 {
-    font-size: 2rem; /* Font size for experience titles */
+    font-size: 3rem; /* Updated to match the introduction font size */
     margin-bottom: 1rem;
   }
 
   p {
-    font-size: 1.8rem; /* Increased font size for experience descriptions */
+    font-size: 2rem; /* Updated font size to match the 'about' paragraph */
     margin-bottom: 1rem;
   }
 
   .environment {
-    font-size: 1.6rem; /* Font size for environment details */
+    font-size: 2rem; /* Match environment details with paragraph font size */
     font-style: italic; /* Optional: to differentiate environment text */
+  }
+
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  li {
+    font-size: 2rem; /* Matching the new size */
+    margin-bottom: 1rem;
   }
 `;
 
