@@ -3,36 +3,36 @@ import styled from 'styled-components';
 
 const ExperienceStyle = styled.div`
   background-color: var(--deep-dark); /* Match the contact banner color */
-  padding: 3rem;
+  padding: 4rem; /* Increase padding for more spacing */
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   text-align: left;
   margin: 3rem 0;
 
   h2 {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
+    font-size: 4rem; /* Increased font size for the main heading */
+    margin-bottom: 2.5rem; /* Increased margin below the heading */
     color: var(--white);
     text-transform: uppercase;
   }
 
   h3 {
-    font-size: 2rem; /* Adjust font size to match the second screenshot */
-    margin-bottom: 0.5rem; /* Adjusted for closer spacing */
-    color: var(--white); /* Use the same color for the titles as headings */
+    font-size: 2.5rem; /* Increased font size for project titles */
+    margin-bottom: 1rem; /* Increased margin below project titles */
+    color: var(--white);
   }
 
   p {
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem; /* Reduce spacing for a tighter look */
+    font-size: 2rem; /* Increased font size for project descriptions */
+    margin-bottom: 1rem; /* Margin for spacing */
     color: var(--gray-1);
   }
 
   .environment {
-    font-size: 1.4rem;
+    font-size: 1.8rem; /* Increased font size for environment details */
     font-style: italic;
     color: var(--gray-1);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* Increased spacing */
   }
 
   ul {
@@ -41,7 +41,8 @@ const ExperienceStyle = styled.div`
   }
 
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Spacing between list items */
+    font-size: 1.6rem; /* Increased font size for list items */
     color: var(--light-gray);
   }
 `;
@@ -49,7 +50,7 @@ const ExperienceStyle = styled.div`
 export default function ExperienceSection() {
   return (
     <ExperienceStyle>
-      <h2>My Academic Projects</h2>
+      
       <div>
         <h3>Automatic Generation of Image Captions Using Deep Learning</h3>
         <p>
