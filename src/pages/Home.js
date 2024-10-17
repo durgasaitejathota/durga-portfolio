@@ -62,7 +62,7 @@ export default function Home() {
         <div className="academicProjects">
           <h2>My Academic Projects</h2>
           <ProjectsSection />
-          <Button btnText="View All Projects" btnLink="/projects" />
+        
         </div>
 
         <div className="projectsSection">
