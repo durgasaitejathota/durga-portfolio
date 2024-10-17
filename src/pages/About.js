@@ -86,22 +86,13 @@ export default function About() {
               <h2 className="about__heading">A Java Full Stack Developer</h2>
               <div className="about__info">
                 <PText>
-               <p>
- A skilled Java Full Stack Developer with 3.7 years of experience specializing in building and deploying scalable web applications and microservices. My expertise spans across Java, Spring Boot, and React for developing robust back-end systems and responsive front-end applications. 
-    I have a strong background in microservices architecture, event-driven systems with Kafka, and RESTful APIs for seamless integration.
-</p>
-
+                  A skilled Java Full Stack Developer with 3.7 years of experience specializing in building and deploying scalable web applications and microservices. My expertise spans across Java, Spring Boot, and React for developing robust back-end systems and responsive front-end applications.
                   <br /> <br />
-                  My technical skills extend to containerization using Docker, orchestration with Kubernetes, and deploying applications on cloud platforms like AWS (EC2, S3, ECS, and Lambda). I am proficient in optimizing database performance with PostgreSQL and MongoDB and have automated CI/CD pipelines using Jenkins, 
-    ensuring rapid and reliable deployment. Additionally, I have experience with monitoring and logging using AWS CloudWatch, Log4j, and the ELK stack.
-                  <br />
-                  <br />
+                  My technical skills extend to containerization using Docker, orchestration with Kubernetes, and deploying applications on cloud platforms like AWS (EC2, S3, ECS, and Lambda). I am proficient in optimizing database performance with PostgreSQL and MongoDB and have automated CI/CD pipelines using Jenkins.
+                  <br /> <br />
                   I have contributed to various projects, including enhancing system scalability, implementing chatbot solutions for dynamic management, and optimizing data synchronization.
-    I am also adept at collaborating with cross-functional teams within Agile environments, continuously delivering high-quality software solutions.
-                  place.
                 </PText>
               </div>
-            
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
@@ -110,54 +101,22 @@ export default function About() {
           <div className="about__info__items">
             <div className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
-              <AboutInfoItem
-                title="Bachelor's"
-                items={['Sathyabama University']}
-              />
-              <AboutInfoItem
-                title="Master's"
-                items={['University Of Central Missouri']}
-              />
+              <AboutInfoItem title="Bachelor's" items={['Sathyabama University']} />
+              <AboutInfoItem title="Master's" items={['University Of Central Missouri']} />
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
-
-              <AboutInfoItem
-          title="Front-End Technologies"
-          items={['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Bootstrap']}
-        />
-        <AboutInfoItem
-          title="Back-End Technologies"
-          items={['Java', 'Spring Boot', 'Node.js', 'Express']}
-        />
-        <AboutInfoItem
-          title="Database Technologies"
-          items={['PostgreSQL', 'MongoDB']}
-        />
-        <AboutInfoItem
-          title="Cloud & DevOps"
-          items={['AWS', 'Docker', 'Kubernetes']}
-        />
-        <AboutInfoItem
-          title="Testing Frameworks"
-          items={['JUnit', 'Mockito', 'Selenium']}
-        />
-            
-              
+              <AboutInfoItem title="Front-End Technologies" items={['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Bootstrap']} />
+              <AboutInfoItem title="Back-End Technologies" items={['Java', 'Spring Boot', 'Node.js', 'Express']} />
+              <AboutInfoItem title="Database Technologies" items={['PostgreSQL', 'MongoDB']} />
+              <AboutInfoItem title="Cloud & DevOps" items={['AWS', 'Docker', 'Kubernetes']} />
+              <AboutInfoItem title="Testing Frameworks" items={['JUnit', 'Mockito', 'Selenium']} />
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">Experience</h1>
-
-              <AboutInfoItem
-                title="Jul 2023 - Present"
-                items={['Java Full Stack Developer at Sapot Systems Inc']}
-                  <AboutInfoItem
-                title="May 2021 - Jul 2022"
-                items={['Software Developer at Tata Consultancy Services']}
-                  <AboutInfoItem
-                title="Jul 2019 - May 2021"
-                items={['Java Full Stack Developer at Zoron Solutions LLC']}
-              />
+              <AboutInfoItem title="Jul 2023 - Present" items={['Java Full Stack Developer at Sapot Systems Inc']} />
+              <AboutInfoItem title="May 2021 - Jul 2022" items={['Software Developer at Tata Consultancy Services']} />
+              <AboutInfoItem title="Jul 2019 - May 2021" items={['Java Full Stack Developer at Zoron Solutions LLC']} />
             </div>
           </div>
         </div>
