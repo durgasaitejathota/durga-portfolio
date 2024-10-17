@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         
         <div className="academicProjects">
-          <h2>My Academic Projects</h2>
+          
           <ProjectsSection />
         
         </div>
