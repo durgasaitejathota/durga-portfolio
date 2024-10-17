@@ -3,43 +3,39 @@ import styled from 'styled-components';
 import ProjectItem from '../components/ProjectItem'; // Correct path to ProjectItem
 
 const ProjectSectionStyle = styled.div`
-  padding: 2rem 0;
-  text-align: center;
-
   h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #fff; // Adjust color as needed
+    font-size: 2.5rem;  // Increase size of the section title
+    margin-bottom: 1rem;
+    color: white;  // Assuming you want this to match your theme
+    text-align: center; // Center align title
   }
 
   h3 {
-    font-size: 2rem;
-    margin-top: 1rem;
-    color: #fff; // Adjust color as needed
+    font-size: 1.8rem;  // Increase size of the project titles
+    margin-top: 1.5rem;
+    color: #dcdcdc; // A lighter color for project titles
   }
 
   p {
-    font-size: 1.2rem;
-    color: #ccc; // Adjust color as needed
+    font-size: 1.2rem;  // Regular font size for project descriptions
+    color: #f0f0f0; // Lighter color for description text
   }
 
   ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 1rem 0;
-    text-align: left;
-    color: #eee; // Adjust color as needed
+    list-style-type: none; // No bullets
+    padding: 0; // Remove default padding
+    color: #f0f0f0; // Lighter color for the list
+  }
 
-    li {
-      margin: 0.5rem 0;
-    }
+  li {
+    margin: 0.5rem 0; // Spacing for list items
   }
 `;
 
 export default function ProjectsSection() {
   return (
     <ProjectSectionStyle>
-
+      <h2>My Academic Projects</h2>
       <div>
         <h3>Automatic Generation of Image Captions Using Deep Learning</h3>
         <p>Developed advanced image captioning algorithms using deep learning frameworks like CNNs and LSTMs, achieving a 35% improvement in caption accuracy.</p>
