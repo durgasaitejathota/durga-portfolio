@@ -48,7 +48,7 @@ const ExperienceStyle = styled.div`
 export default function ExperienceSection() {
   return (
     <ExperienceStyle>
-      <h2>My Academic Projects</h2>
+      
       <div>
         <h3>Automatic Generation of Image Captions Using Deep Learning</h3>
         <p>
