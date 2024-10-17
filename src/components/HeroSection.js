@@ -1,65 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../components/Button';
-import HeroSection from '../components/HeroSection'; 
-import ExperienceSection from '../components/ExperienceSection'; 
-import ContactBanner from '../components/ContactBanner'; 
 
-const HomeStyle = styled.div`
-  padding: 0 5rem;
-  text-align: center;
+const HeroSectionStyle = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0; /* Ensure no extra margin */
+  padding: 0;
 
-  .introduction {
-    font-size: 3rem;
-    margin: 2rem 0;
-    line-height: 1.5;
-  }
-
-  .about {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-
-  .recentWorks {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-top: 4rem;
+  .heroHeading {
+    font-size: 4rem;
+    color: var(--white);
+    text-align: center;
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 0 2rem;
-    .introduction {
+    .heroHeading {
       font-size: 2.5rem;
-    }
-    .about {
-      font-size: 1.8rem;
-    }
-    .recentWorks {
-      font-size: 3rem;
     }
   }
 `;
 
-export default function Home() {
+export default function HeroSection() {
   return (
-    <HomeStyle>
-      <HeroSection />
-      <div className="container">
-        <h1 className="introduction">Let Me Introduce Myself</h1>
-        <p className="about">
-          I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices.
-          I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization.
-          I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
-        </p>
-
-        <ExperienceSection />
-
-        <h2 className="recentWorks">Some of My Recent Works</h2>
-        <Button btnText="Projects" btnLink="/projects" />
-
-        <ContactBanner />
-      </div>
-    </HomeStyle>
+    <HeroSectionStyle>
+      <h1 className="heroHeading">
+        Hello, This is <br /> Durga Sai Teja Thota
+      </h1>
+    </HeroSectionStyle>
   );
 }
-
