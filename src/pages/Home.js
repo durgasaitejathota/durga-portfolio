@@ -20,6 +20,12 @@ const HomeStyle = styled.div`
     margin-top: 1rem;
   }
 
+  .experience {
+    font-size: 3rem; /* Match font size with introduction */
+    margin: 2rem 0; /* Consistent spacing */
+    line-height: 1.5;
+  }
+
   .recentWorks {
     font-size: 3.5rem; /* Make "Some of My Recent Works" larger */
     font-weight: bold;
@@ -34,6 +40,9 @@ const HomeStyle = styled.div`
     .about {
       font-size: 1.8rem;
     }
+    .experience {
+      font-size: 2.5rem; /* Adjust for smaller screens */
+    }
     .recentWorks {
       font-size: 3rem;
     }
@@ -47,11 +56,12 @@ export default function Home() {
       <div className="container">
         <h1 className="introduction">Let Me Introduce Myself</h1>
         <p className="about">
-          I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices.
-          I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization.
+          I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices. 
+          I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization. 
           I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
         </p>
 
+        <h2 className="experience">Experience</h2> {/* Added Experience heading */}
         <ExperienceSection /> {/* Experience Section displayed here */}
 
         <h2 className="recentWorks">Some of My Recent Works</h2>
