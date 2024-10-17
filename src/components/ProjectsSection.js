@@ -4,20 +4,20 @@ import ProjectItem from '../components/ProjectItem'; // Correct path to ProjectI
 
 const ProjectSectionStyle = styled.div`
   h2 {
-    font-size: 2.5rem;  // Increase size of the section title
+    font-size: 3rem;  // Increased size of the section title
     margin-bottom: 1rem;
     color: white;  // Assuming you want this to match your theme
     text-align: center; // Center align title
   }
 
   h3 {
-    font-size: 1.8rem;  // Increase size of the project titles
+    font-size: 2.2rem;  // Increased size of the project titles
     margin-top: 1.5rem;
     color: #dcdcdc; // A lighter color for project titles
   }
 
   p {
-    font-size: 1.2rem;  // Regular font size for project descriptions
+    font-size: 1.5rem;  // Increased font size for project descriptions
     color: #f0f0f0; // Lighter color for description text
   }
 
