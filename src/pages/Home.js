@@ -28,6 +28,9 @@ const HomeStyle = styled.div`
     margin-top: 4rem;
     font-size: 2rem; /* Adjust size for the section title */
     text-align: left; /* Align text to the left */
+    background-color: #f8f9fa; /* Light background color for highlighting */
+    padding: 1rem; /* Padding for the section */
+    border-radius: 8px; /* Rounded corners */
   }
 
   @media only screen and (max-width: 768px) {
@@ -62,7 +65,6 @@ export default function Home() {
         <div className="academicProjects">
           <h2>My Academic Projects</h2>
           <ProjectsSection />
-          <Button btnText="View All Projects" btnLink="/projects" />
         </div>
 
         <div className="projectsSection">
