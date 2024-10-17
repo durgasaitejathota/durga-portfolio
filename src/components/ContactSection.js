@@ -68,7 +68,7 @@ export default function ContactSection() {
             <div className="socialLinks">
               <a
                 className="socialLink"
-                href="https://www.linkedin.com/in/your-profile" // Replace with your LinkedIn URL
+                href="linkedin.com/in/durga-sai-teja-thota-6b5592330" // Replace with your LinkedIn URL
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -76,7 +76,7 @@ export default function ContactSection() {
               </a>
               <a
                 className="socialLink"
-                href="https://github.com/your-profile" // Replace with your GitHub URL
+                href="https://github.com/durgasaitejathota" // Replace with your GitHub URL
                 target="_blank"
                 rel="noopener noreferrer"
               >
