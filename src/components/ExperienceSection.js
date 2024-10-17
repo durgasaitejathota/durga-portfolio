@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ExperienceStyle = styled.div`
-  background-color: var(--deep-dark); /* Adds the background color used in the contact banner */
+  background-color: var(--deep-dark); /* Adds a background color */
   padding: 3rem; /* Adds padding for spacing */
   border-radius: 12px; /* Rounded corners */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for a 3D effect */
@@ -17,13 +17,13 @@ const ExperienceStyle = styled.div`
   }
 
   h3 {
-    font-size: 2.2rem; /* Font size for project titles */
+    font-size: 2.2rem; /* Font size for experience titles */
     margin-bottom: 1rem;
     color: var(--gray-1); /* Lighter color for titles */
   }
 
   p {
-    font-size: 1.8rem; /* Font size for project descriptions */
+    font-size: 1.8rem; /* Font size for experience descriptions */
     margin-bottom: 1rem;
     color: var(--light-gray); /* Lighter color for descriptions */
   }
