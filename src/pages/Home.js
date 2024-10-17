@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HeroSection from '../components/HeroSection';
 import Button from '../components/Button';
-import ExperienceSection from '../components/ExperienceSection'; // Keep this import if you need the component
-import ProjectsSection from '../components/ProjectsSection';
+import ProjectsSection from '../components/ProjectsSection'; // To display academic projects
 import ContactBanner from '../components/ContactBanner';
 
 const HomeStyle = styled.div`
@@ -21,8 +20,8 @@ const HomeStyle = styled.div`
     margin-top: 2rem; /* Spacing above about section */
   }
 
-  .moreAboutMe {
-    margin-top: 2rem; /* Spacing for button */
+  .projectsSection {
+    margin-top: 4rem; /* Spacing before the projects section */
   }
 
   @media only screen and (max-width: 768px) {
@@ -50,9 +49,12 @@ export default function Home() {
             <Button btnText="More About Me" btnLink="/about" />
           </div>
         </div>
-        {/* Add a new section for work experience */}
-        <h2>Some of My Recent Works to Checkout My Work Experiences</h2>
-        <ProjectsSection /> {/* This will display the Projects with updated button */}
+        {/* Projects section should now display academic projects */}
+        <div className="projectsSection">
+          <h2>Checkout My Work Experience</h2>
+          <ProjectsSection /> {/* Ensure this section is now showing academic projects */}
+          <Button btnText="Work Experience" btnLink="/work-experience" />
+        </div>
         <ContactBanner />
       </div>
     </HomeStyle>
