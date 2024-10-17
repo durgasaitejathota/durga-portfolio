@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
+import { useHistory } from 'react-router-dom';
 
 const FooterStyle = styled.div`
   background-color: var(--deep-dark);
@@ -40,8 +41,8 @@ const FooterStyle = styled.div`
     }
   }
 `;
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+
+
 
 function Footer() {
   const history = useHistory();
