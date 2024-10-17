@@ -1,62 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroSection from '../components/HeroSection';
-import Button from '../components/Button';
-import ProjectsSection from '../components/ProjectsSection'; // To display academic projects
-import ContactBanner from '../components/ContactBanner';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from 'swiper';
+import ProjectItem from './ProjectItem';
+import SectionTitle from './SectionTitle';
+import 'swiper/swiper-bundle.min.css';
+import projects from '../assets/data/projects'; // Ensure this contains academic projects
 
-const HomeStyle = styled.div`
-  padding: 0 5rem; /* Padding for the home page */
-  text-align: center;
+// install Swiper modules
+SwiperCore.use([Navigation]);
 
-  .introduction {
-    font-size: 3rem; /* Font size for introduction */
-    margin-bottom: 2rem; /* Spacing below introduction */
-    line-height: 1.5; /* Line height for readability */
-  }
-
-  .about {
-    font-size: 2rem; /* Font size for about section */
-    margin-top: 2rem; /* Spacing above about section */
-  }
-
-  .projectsSection {
-    margin-top: 4rem; /* Spacing before the projects section */
-  }
-
-  @media only screen and (max-width: 768px) {
-    padding: 0 2rem; /* Less padding on smaller screens */
-    .introduction {
-      font-size: 2.5rem; /* Font size adjustment for smaller screens */
-    }
-    .about {
-      font-size: 1.8rem; /* Font size adjustment for smaller screens */
-    }
+const ProjectSectionStyle = styled.div`
+  padding: 10rem 0;
+  .projects__allItems {
+    display: flex;
+    gap: 3rem;
+    margin-top: 5rem;
   }
 `;
 
-export default function Home() {
+export default function ProjectsSection() {
   return (
-    <HomeStyle>
+    <ProjectSectionStyle>
       <div className="container">
-        <HeroSection />
-        <div className="introduction">
-          <h1>Let Me Introduce Myself</h1>
-          <p className="about">
-            I'm Durga Sai Teja Thota, a Java Full Stack Developer with 3.7 years of experience in building scalable web applications and microservices. I specialize in Java, Spring Boot, React, and cloud technologies like AWS, with skills in Docker, Kubernetes, and database optimization. I have a strong background in microservices, CI/CD automation, and Agile collaboration, delivering high-quality software solutions across various projects.
-          </p>
-          <div className="moreAboutMe">
-            <Button btnText="More About Me" btnLink="/about" />
-          </div>
+        <SectionTitle subheading="Checkout My Work Experience" heading="My Academic Projects" />
+        <div className="projects__allItems">
+          <Swiper spaceBetween={30} slidesPerView={1} navigation>
+            {projects.map((project) => (
+              <SwiperSlide key={project.id}>
+                <ProjectItem
+                  title={project.name}
+                  img={project.image}
+                  desc={project.description}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        {/* Projects section should now display academic projects */}
-        <div className="projectsSection">
-          <h2>Checkout My Work Experience</h2>
-          <ProjectsSection /> {/* Ensure this section is now showing academic projects */}
-          <Button btnText="Work Experience" btnLink="/work-experience" />
-        </div>
-        <ContactBanner />
       </div>
-    </HomeStyle>
+    </ProjectSectionStyle>
   );
 }
