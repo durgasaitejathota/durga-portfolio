@@ -1,35 +1,47 @@
-import React, { useState } from 'react';
+
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const ProjectItemStyles = styled.div`
-  // ...existing styles
 
-  .projectItem__details {
-    margin-top: 1rem;
-    font-size: 1.4rem; // Adjust as needed
-    color: #f0f0f0; // Lighter color for additional info
+const ProjectItemStyles = styled.div`
+  .projectItem__img {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: inline-block;
+    border: 3px solid var(--gray-2);
+    img {
+      height: 100%;
+    }
   }
-  
-  .toggle-button {
+  .projectItem__info {
     margin-top: 1rem;
-    cursor: pointer;
-    color: #007bff; // Change color as needed
+    background-color: var(--deep-dark);
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  .projectItem__title {
+    font-size: 2.2rem;
+  }
+  .projectItem__desc {
+    font-size: 1.6rem;
+    font-family: 'RobotoMono Regular';
+    margin-top: 1rem;
+  }
+  @media only screen and (max-width: 768px) {
+    .projectItem__img {
+      height: 350px;
+    }
   }
 `;
 
 export default function ProjectItem({
-  img,
-  title,
-  desc,
-  moreInfo, // New prop for additional info
+  img = ProjectImg,
+  title = 'Project Name',
+  desc = '',
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleDetails = () => {
-    setIsExpanded(!isExpanded);
-  };
-
   return (
     <ProjectItemStyles>
       <Link to="/projects" className="projectItem__img">
@@ -40,14 +52,6 @@ export default function ProjectItem({
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
-        <div className="toggle-button" onClick={toggleDetails}>
-          {isExpanded ? 'See Less' : 'Know More'}
-        </div>
-        {isExpanded && (
-          <div className="projectItem__details">
-            {moreInfo} {/* Render the additional info here */}
-          </div>
-        )}
       </div>
     </ProjectItemStyles>
   );
