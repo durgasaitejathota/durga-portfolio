@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../components/SectionTitle';
 import ProjectItem from '../components/ProjectItem';
@@ -27,7 +27,6 @@ export default function Projects() {
               title={item.name}
               desc={item.description}
               img={item.image}
-              moreInfo={item.moreInfo} // Pass the additional info
             />
           ))}
         </div>
